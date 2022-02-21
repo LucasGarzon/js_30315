@@ -1,13 +1,11 @@
 console.log("Desafío complementario 01");
-
+// Declaración de fundamental como variable global
 let fundamental = "";
-
+// función del botón Inicio
 function botonA() {
     let nota = prompt("Ingresa una nota\n" + "Ejemplo:\n" + "\n" + "Do, Re, Mi, Fa, ... " ).toLowerCase()
     let msjFinal = ""
-
     // Desde acá, de acuerdo a la nota ingresada se le asigna un valor inicial
-
     if (nota == "do" || nota == "si#" || nota == "c" || nota == "bb") {
         fundamental = 32.7
     } else if (nota == "do#" || nota == "reb" || nota == "c#" || nota == "db") {
@@ -38,9 +36,7 @@ function botonA() {
         alert("Tal vez, en tu planeta, " + "\"" + nota + "\"" + " sea una nota. Como aquí no lo es, aquí te dejo unos ejemplos:\n" + "\n" + "Do\n" + "Re\n" + "Mi\n" + "Fa\n" + "Sol\n" + "La\n" + "Si\n")
         msjFinal = "¡Vuelve a intentarlo!"
     }
-
     // A continuación, un ciclo for que calcula en Hertz las octavas de las notas ingresadas
-
     let vuelta = 0
     for (let i = 1; i <= 10000; i*=2) {
         let armonico = fundamental * i
