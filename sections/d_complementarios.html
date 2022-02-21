@@ -10,16 +10,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand ps-4" href="#">lg</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center text-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center text-center">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Index</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@
     </header>
     <div>
         <div class="container-fluid m-0">
-            <div class="row bg-primary">
+            <div class="row bg-primary overflow-hidden">
                 <div class=" col-12 d-flex flex-column justify-content-center align-items-center">
                     <h1 class="pb-4 pt-5 text-center">Desafío Complementario Nr1</h1>
                     <p class="col-12 col-lg-7 mb-0 pb-2">Este desafío muestra, a través de un loop "for", todas las frecuencias correspondientes a la octava de una nota musical.</p>
@@ -55,20 +55,29 @@
                     <p class="col-12 col-lg-7 mb-0 pb-2">Con este dato ingresado ya somos capaces de calcular las frecuencias correspondientes a las próximas octavas. Esto lo haremos multiplicando por 2 cada resultado obtenido del loop predecesor.</p>
                     <img src="../assets/dc_ciclo.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
                     <p class="col-12 col-lg-7 mb-0 pb-2">Una vez finalizado, recibiremos una alerta con todos nuestros resultados, siendo estos siempre menores a 20,000hz (Frecuencia más aguda percibida por el oído humano).</p>
-                    <div class="d-flex justify-content-between p-4">
-                        <button onclick="botonA()" class="m-3 p-4 btn btn-dark col-6">Iniciar</button>
-                        <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/complementarios/desafiocomp01.js" target="blank" class="m-3 p-4 btn btn-dark col-6">Ir al Código</a>
+                    <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
+                        <button onclick="botonA()" class="btn btn-dark col-6 m-4 p-4 ">Iniciar</button>
+                        <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/complementarios/desafiocomp01.js" target="blank" class="btn btn-dark col-6 m-4 p-4">Ir al Código</a>
                     </div>
                 </div>
                 <div id="parrafo"></div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container-fluid bg-dark">
-            <div class="row">
-                <h2 class="pt-3 pb-3">lg</h2>
+    <footer class="overflow-hidden">
+        <div class="line"></div>
+        <div class="container-fluid bg-primary d-flex flex-column flex-md-row m-0">
+            <div class="row text-center text-sm-start col-12 col-md-6 pt-3">
+                <h2 class="pb-1 pb-md3">lg</h2>
                 <h3 class="fs-6 pb-3">Lucas Garzón | JavaScript - Comisión 30315 | 2022</h3>
+            </div>
+            <div class="row text-center text-sm-end col-12 col-md-6 pt-3 ms-md-auto">
+                <h2 class="pb-1 pb-md3">Navegación</h3>
+                <ul>
+                    <li><a href="../index.html">Index</a></li>
+                    <li><a href="./desafios.html">Desafíos</a></li>
+                    <li><a href="#">Desafíos Complementarios</a></li>
+                </ul>
             </div>
         </div>
     </footer>

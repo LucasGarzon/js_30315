@@ -24,6 +24,20 @@ button a {
     color: black;
 }
 
-footer h2, h3 {
+footer h2, footer h3, footer ul {
     color: white;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.514)
+}
+
+.line {
+    height: 1px;
+    background-color: white;
 }
