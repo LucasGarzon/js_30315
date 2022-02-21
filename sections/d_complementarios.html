@@ -12,7 +12,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand ps-4" href="#">lg</a>
+              <a class="navbar-brand ps-4" href="../index.html">lg</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,7 +26,7 @@
                       Desafíos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./desafios.html">Desafío Nr01</a></li>  
+                      <li><a class="dropdown-item" href="#" onclick="botonDesafios()">Desafío Nr01</a></li>  
                     </ul>
                   </li>     
                   <li class="nav-item dropdown">
@@ -42,28 +42,30 @@
             </div>
           </nav>
     </header>
-    <div>
-        <div class="container-fluid m-0">
-            <div class="row bg-primary overflow-hidden">
-                <div class=" col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="pb-4 pt-5 text-center">Desafío Complementario Nr1</h1>
-                    <p class="col-12 col-lg-7 mb-0 pb-2">Este desafío muestra, a través de un loop "for", todas las frecuencias correspondientes a la octava de una nota musical.</p>
-                    <p class="col-12 col-lg-7 mb-0 pb-2">Primero, el navegador te pedira que ingreses una nota. Esta misma puede ser cualquiera de la escala musial occidental tradicional. Es decir:<b> Do, Re, Mi, Sol#, Mib, etc</b>. En caso de no corresponderse a una nota seremos alertados y podremos volver a intentarlo.</p>
-                    <img src="../assets/dc_ingrese-nota.svg" alt="Imágen del código de ingrese Nota" class="col-12 col-lg-7 pt-3 pb-3 rounded">
-                    <p class="col-12 col-lg-7 mb-0 pb-2">Una vez ingresada la nota, se le asignará un valor inicial llamado Fundamental. Este mismo representa el menor valor posible, expresado en hercios (Hz), capaz de ser percibido por el oído humano para esa nota en particular.</p>
-                    <img src="../assets/dc_fundamental.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
-                    <p class="col-12 col-lg-7 mb-0 pb-2">Con este dato ingresado ya somos capaces de calcular las frecuencias correspondientes a las próximas octavas. Esto lo haremos multiplicando por 2 cada resultado obtenido del loop predecesor.</p>
-                    <img src="../assets/dc_ciclo.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
-                    <p class="col-12 col-lg-7 mb-0 pb-2">Una vez finalizado, recibiremos una alerta con todos nuestros resultados, siendo estos siempre menores a 20,000hz (Frecuencia más aguda percibida por el oído humano).</p>
-                    <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
-                        <button onclick="botonA()" class="btn btn-dark col-6 m-4 p-4">Iniciar</button>
-                        <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/complementarios/desafiocomp01.js" target="blank" class="btn btn-dark col-6 m-4 p-4">Ir al Código</a>
+    <main>
+        <div>
+            <div class="container-fluid m-0">
+                <div class="row bg-primary overflow-hidden">
+                    <div class=" col-12 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="pb-4 pt-5 text-center">Desafío Complementario Nr1</h1>
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Este desafío muestra, a través de un loop "for", todas las frecuencias correspondientes a la octava de una nota musical.</p>
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Primero, el navegador te pedira que ingreses una nota. Esta misma puede ser cualquiera de la escala musial occidental tradicional. Es decir:<b> Do, Re, Mi, Sol#, Mib, etc</b>. En caso de no corresponderse a una nota seremos alertados y podremos volver a intentarlo.</p>
+                        <img src="../assets/dc_ingrese-nota.svg" alt="Imágen del código de ingrese Nota" class="col-12 col-lg-7 pt-3 pb-3 rounded">
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Una vez ingresada la nota, se le asignará un valor inicial llamado Fundamental. Este mismo representa el menor valor posible, expresado en hercios (Hz), capaz de ser percibido por el oído humano para esa nota en particular.</p>
+                        <img src="../assets/dc_fundamental.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Con este dato ingresado ya somos capaces de calcular las frecuencias correspondientes a las próximas octavas. Esto lo haremos multiplicando por 2 cada resultado obtenido del loop predecesor.</p>
+                        <img src="../assets/dc_ciclo.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Una vez finalizado, recibiremos una alerta con todos nuestros resultados, siendo estos siempre menores a 20,000hz (Frecuencia más aguda percibida por el oído humano).</p>
+                        <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
+                            <button onclick="botonA()" class="btn btn-dark col-6 m-4 p-4">Iniciar</button>
+                            <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/complementarios/desafiocomp01.js" target="blank" class="btn btn-dark col-6 m-4 p-4">Ir al Código</a>
+                        </div>
                     </div>
+                    <div id="parrafo"></div>
                 </div>
-                <div id="parrafo"></div>
             </div>
         </div>
-    </div>
+    </main>
     <footer class="overflow-hidden">
         <div class="line"></div>
         <div class="container-fluid bg-primary d-flex flex-column flex-sm-row align-items-center m-0">
@@ -75,13 +77,14 @@
                 <h2 class="pb-1 pb-md-3">Navegación</h3>
                 <ul class="fs-6 pb-3">
                     <li><a href="../index.html">Index</a></li>
-                    <li><a href="./desafios.html">Desafíos</a></li>
+                    <li><a href="#" onclick="botonDesafios()">Desafíos</a></li>
                     <li><a href="#">Desafíos Complementarios</a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="../javascript/complementarios/desafiocomp01.js"></script>
+    <script src="../javascript/botonesIndex.js"></script>
     <!-- BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
