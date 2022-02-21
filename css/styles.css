@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    color: white;
+}
+
+
 p {
     color: white;
 }
 
-.container-fluid {
-    height: 100vh;
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h2, h3 {
+    color: white;
 }

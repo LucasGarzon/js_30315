@@ -36,9 +36,11 @@ function botonA() {
         // Si el usuario ingresara otro valor a los anteriores, la variable fundamental se transformará en un string
         fundamental = "string"
         alert("Tal vez, en tu planeta, " + "\"" + nota + "\"" + " sea una nota. Como aquí no lo es, aquí te dejo unos ejemplos:\n" + "\n" + "Do\n" + "Re\n" + "Mi\n" + "Fa\n" + "Sol\n" + "La\n" + "Si\n")
-        msjFinal = "Vuelve a intentarlo!"
+        msjFinal = "¡Vuelve a intentarlo!"
     }
+
     // A continuación, un ciclo for que calcula en Hertz las octavas de las notas ingresadas
+
     let vuelta = 0
     for (let i = 1; i <= 10000; i*=2) {
         let armonico = fundamental * i
