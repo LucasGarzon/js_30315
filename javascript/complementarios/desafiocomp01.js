@@ -8,9 +8,9 @@ function botonA() {
 
     // Desde acá, de acuerdo a la nota ingresada se le asigna un valor inicial
 
-    if (nota == "do" || nota == "si#") {
+    if (nota == "do" || nota == "si#" || nota == "c" || nota == "bb") {
         fundamental = 32.7
-    } else if (nota == "do#" || nota == "reb") {
+    } else if (nota == "do#" || nota == "reb" || nota == "c#" || nota == "db") {
         fundamental = 34.65
     } else if (nota == "re") {
         fundamental = 36.71
