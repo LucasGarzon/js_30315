@@ -23,7 +23,11 @@ button a {
     color: black;
 }
 
-footer h2, footer h3, footer ul {
+h2, h3 {
+    color: white;
+}
+
+footer ul {
     color: white;
     list-style: none;
 }
