@@ -14,7 +14,11 @@ h1 {
     color: white;
 }
 
-p {
+p, p a, .container__list {
+    color: white;
+}
+
+p a:hover {
     color: white;
 }
 
@@ -51,6 +55,16 @@ footer a:hover {
 
 .cursor_txt {
     animation: myAnim 2s ease 0s infinite normal forwards;    
+}
+
+.container__textoDesafio {
+    border: 2px dashed white;
+    /* outline: ; */
+}
+
+.windowsTitleBar {
+    height: 30px;
+    background-color: blue;
 }
 
 @keyframes myAnim {

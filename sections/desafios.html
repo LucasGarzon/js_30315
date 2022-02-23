@@ -46,35 +46,53 @@
     <!-- MAIN  MAIN  MAIN  MAIN  MAIN -->
     <main>
         <div class="container-fluid bg-primary">
-            <h1 class="pb-4 pt-5 text-center">Desafío 01 | Calculadora de BPM a MS<span class="cursor_txt">█</span></h1>
+            <h1 class="pb-5 pt-5 text-center">Desafío 01 | Calculadora de BPM a MS<span class="cursor_txt">█</span></h1>
+            <div class="col-12 d-flex justify-content-center mb-5">
+              <p class="container col-12 col-lg-12 p-3 container__textoDesafio">Este programa corresponde al <b>Desafío Nro01 del curso de Javascript</b>. El mismo convierte BPM (Beats Per Minute) a milisegundos y nos devuelve un valor, expresado en milisegundos (ms), para un conjunto de diversas figuras musicales.</p>
+            </div>
             <div class="container">
                 <div class="row col-12">
                   <div class="col-12 d-flex flex-column flex-lg-row">
                     <img src="../assets/bitpc.png" alt="Computadora en bitart" class="col-12 col-lg-6 pt-3 pb-3">
                     <div class="col-12 col-lg-6">
-                      <p>Este programa corresponde al Desafío Nro01 del curso de Javascript.<br> El mismo se trata de una calculadora que convierte BPM (Beats Per Minute) a milisegundos.</p>
-                      <p>Para esto mismo, comenzaremos seleccionando de nuestro input un valor expresado en BPM. Este mismo ya estará seteado en 120BPM por default.</p>
-                      <p>A partir de este dato, nuestro programa podrá convertir ese dato a una variable llamada "bpm".</p>
-                      <img src="../assets/inputMiEntrada.svg" alt="Imágen del código de ingrese Nota" class="col-12 col-lg-7 pb-3 w-100">
-                      <p>Además de esto, para obtener nuestro resultado podremos variar entre las dos figuras más conocidas con las cuales vamos a realizar nuestras subdiviciones</p>
+                      <h2>¿Qué es BPM?</h2>
+                      <p><b>BPM es una unidad empleada para medir el ritmo en música. Equivale al número de pulsaciones que caben en un minuto</b>.</p>
+                      <a href="https://es.wikipedia.org/wiki/Pulsaciones_por_minuto#:~:text=Las%20pulsaciones%20por%20minuto%20o,que%20caben%20en%20un%20minuto.&text=%3D%2060%2C%20cada%20negra%20valdr%C3%A1%20un%20segundo."  target="blank" class="btn btn-light w-50 mb-3">Quiero saber más</a>
+                      <h2>¿Cuando resultaría útil un programa con este?</h2>
+                      <p>En el caso que estemos trabajando con procesos de audio, ya sea dentro de un software o bien a través de un hardware, nuestro programa resultaría muy útil. Esto se debe a que las plataformas de procesamiento de audio orientadas a la música suelen manejarse principalmente en BPM y muchos de los procesos que pueden aplicarse dentro de estos softwares podrían llegar a estar expresados en milisegundos.<br> Si bien con el paso del tiempo los software de audio fueron implementando este tipo de conversión dentro de las mismas plataformas, muchas veces nos encontramos con procesos que aun siguen ofreciendo solamente parámetros en unidades de milisegundos. Esto suele aumentar cuando salimos del software para trabajar con hardware externos (Perisféricos).</p>
+                      <h2>¿Cómo funciona?</h2>
+                      <p>Nuestro programa se va a encargar de transformar la medida expresada en BPM que el usuario ingrese y nos devolverá un equivalente en milisegundos para cada <a href="https://es.wikipedia.org/wiki/Figura_musical" target="blank"> figura músical</a>. Es decir, podremos saber no solo cuantos milisegundos dura un beat (Expresado bajo la figura denominada Negra), sino tamibén cada una de sus subdivisiones (Corchea, Semicorchea, etc.).</p>
                     </div>
                   </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <p class="m-0 me-2 col-2 text-end">BPM</p>
-                        <input type="number" id="miEntrada" value="120" class="col-2">
+                  <div class="border border-white p-0 mb-4 mt-2">
+                    <div class="windowsTitleBar">
                     </div>
-                    <div class="d-flex align-items-center">
-                        <p class="m-0 me-2 col-2 text-end">Figuras Rítmicas</p>
-                        <select name="select" id="selector">
-                            <option value="2">Dosillo</option>
-                            <option value="3">Tresillo</option>
+                    <div class="m-0 bg-dark">
+                      <div class="d-flex align-items-center mb-2 pt-4 pe-3">
+                        <p class="m-0 me-2 col-2 text-end ms-auto ms-1 w-auto">BPM-----></p>
+                        <input type="number" id="miEntrada" value="120" class="col-2 w-50 ms-1text-center">
+                      </div>
+                      <div class="d-flex align-items-center mb-5 pe-3">
+                        <p class="m-0 me-2 col-2 text-end ms-auto ms-1 w-auto">Rítmo-----></p>
+                        <select name="select" id="selector" class="w-50">
+                          <option value="2">Dosillo</option>
+                          <option value="3">Tresillo</option>
                         </select>
+                      </div>
+                      <h2 class="ms-auto ps-3">//A tener en cuenta ...<span class="cursor_txt">█</span></h2>
+                      <div class="m-3">
+                        <p class="ps-4">1 -- Nuestro rango para calcular esta dentro de 1 y 3000.<br>2 -- Podremos seleccionar dos formas distintas de subdividir nuestro beat:</p>
+                        <p class="ps-5">a -- Dosillo:<br>Dentro de cada figura entran 2 subdivisiones.</p>
+                        <p class="ps-5">b -- Tresillo:<br>Dentro de cada figura entran 3 subdivisiones</p>
+                        <p class="ps-4">3 -- Como resultado recibiremos un Alert con nuestros valores</p>
+                      </div>
+                      <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
+                        <button onclick="desafio01()" class="btn btn-light col-6 m-4 p-4 w-auto">Calcular</button>
+                        <a href="#" target="blank" class="btn btn-light col-6 m-4 p-4 w-auto">Ir al Código</a>
+                      </div>
                     </div>
-                    <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
-                        <button onclick="desafio01()" class="btn btn-dark col-6 m-4 p-4">Iniciar</button>
-                        <a href="#" target="blank" class="btn btn-dark col-6 m-4 p-4">Ir al Código</a>
-                    </div>
-                </div>
+                  </div>
+                  </div>                
             </div>
         </div>
     </main>
