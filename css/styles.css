@@ -71,6 +71,10 @@ footer a:hover {
       2px 0px 3px #7fbce8 inset;
 }
 
+input[type=number], .form-input {
+    font-weight: bold;
+}
+  
 @keyframes myAnim {
     0%,
     50%,

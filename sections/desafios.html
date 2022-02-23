@@ -61,34 +61,35 @@
                       <h2>¿Cuando resultaría útil un programa con este?</h2>
                       <p>En el caso que estemos trabajando con procesos de audio, ya sea dentro de un software o bien a través de un hardware, nuestro programa resultaría muy útil. Esto se debe a que las plataformas de procesamiento de audio orientadas a la música suelen manejarse principalmente en BPM y muchos de los procesos que pueden aplicarse dentro de estos softwares podrían llegar a estar expresados en milisegundos.<br> Si bien con el paso del tiempo los software de audio fueron implementando este tipo de conversión dentro de las mismas plataformas, muchas veces nos encontramos con procesos que aun siguen ofreciendo solamente parámetros en unidades de milisegundos. Esto suele aumentar cuando salimos del software para trabajar con hardware externos (Perisféricos).</p>
                       <h2>¿Cómo funciona?</h2>
-                      <p>Nuestro programa se va a encargar de transformar la medida expresada en BPM que el usuario ingrese y nos devolverá un equivalente en milisegundos para cada <a href="https://es.wikipedia.org/wiki/Figura_musical" target="blank"> figura músical</a>. Es decir, podremos saber no solo cuantos milisegundos dura un beat (Expresado bajo la figura denominada Negra), sino tamibén cada una de sus subdivisiones (Corchea, Semicorchea, etc.).</p>
+                      <p>Nuestro programa se va a encargar de transformar la medida expresada en BPM que el usuario ingrese y nos devolverá un equivalente en milisegundos para cada <a href="https://es.wikipedia.org/wiki/Figura_musical" target="blank"> figura músical</a>. Es decir, podremos saber no solo cuantos milisegundos dura un beat (expresado bajo la figura denominada Negra), sino tamibén cada una de sus subdivisiones (Corchea, Semicorchea, etc.).</p>
                     </div>
                   </div>
                   <div class="border border-white p-0 mb-4 mt-2">
                     <div class="windowsTitleBar">
                     </div>
                     <div class="m-0 bg-dark">
+                      <h2 class="ms-auto ps-3 pt-3">Calculadora:</h2>
                       <div class="d-flex align-items-center mb-2 pt-4 pe-3">
                         <p class="m-0 me-2 col-2 text-end ms-auto ms-1 w-auto">BPM-----></p>
                         <input type="number" id="miEntrada" value="120" class="col-2 w-50 ms-1text-center">
                       </div>
                       <div class="d-flex align-items-center mb-5 pe-3">
-                        <p class="m-0 me-2 col-2 text-end ms-auto ms-1 w-auto">Rítmo-----></p>
-                        <select name="select" id="selector" class="w-50">
-                          <option value="2">Dosillo</option>
-                          <option value="3">Tresillo</option>
+                        <p class="m-0 me-2 col-2 text-end ms-auto ms-1 w-auto">Subdivisión-----></p>
+                        <select name="select" id="selector" class="form-input w-50">
+                          <option value="2" class="form-input">Dosillo</option>
+                          <option value="3" class="form-input">Tresillo</option>
                         </select>
                       </div>
                       <h2 class="ms-auto ps-3">//A tener en cuenta ...<span class="cursor_txt">█</span></h2>
                       <div class="m-3">
-                        <p class="ps-4">1 -- Nuestro rango para calcular esta dentro de 1 y 3000.<br>2 -- Podremos seleccionar dos formas distintas de subdividir nuestro beat:</p>
+                        <p class="ps-4">1 -- Nuestro rango para calcular esta dentro de 1 y 3000.<br>2 -- Podremos seleccionar dos formas distintas para subdividir nuestro beat:</p>
                         <p class="ps-5">a -- Dosillo:<br>Dentro de cada figura entran 2 subdivisiones.</p>
                         <p class="ps-5">b -- Tresillo:<br>Dentro de cada figura entran 3 subdivisiones.</p>
-                        <p class="ps-4">3 -- Como resultado recibiremos un Alert con nuestros valores</p>
+                        <p class="ps-4">3 -- Como resultado recibiremos una alert con nuestros valores</p>
                       </div>
                       <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
                         <button onclick="desafio01()" class="btn btn-light col-6 m-4 p-4 w-auto">Calcular</button>
-                        <a href="#" target="blank" class="btn btn-light col-6 m-4 p-4 w-auto">Ir al Código</a>
+                        <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/desafios/desafio01.js" target="blank" class="btn btn-light col-6 m-4 p-4 w-auto">Ir al Código</a>
                       </div>
                     </div>
                   </div>
