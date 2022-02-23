@@ -64,7 +64,11 @@ footer a:hover {
 
 .windowsTitleBar {
     height: 30px;
-    background-color: blue;
+    background-color: white;
+    border-radius:5px 5px 0px 0px;
+    box-shadow:
+      -2px 0px 5px rgba(20, 20, 20, 0.6) inset,
+      2px 0px 3px #7fbce8 inset;
 }
 
 @keyframes myAnim {
