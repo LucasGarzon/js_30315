@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Lucas Garzón | Desafío Complementario 01 Javascript 30315</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand ps-4" href="../../index.html">lg</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../../index.html">Index</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Desafíos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../desafios.html">Desafío Nr01</a></li>  
+                    </ul>
+                  </li>     
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Desafíos Compelmentarios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Complementario Nr01</a></li>  
+                      <li><a class="dropdown-item" href="./d_complementario02.html">Complementario Nr02</a></li> 
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div>
+            <div class="container-fluid m-0">
+                <div class="row bg-primary overflow-hidden">
+                    <div class=" col-12 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="pb-4 pt-5 text-center">Desafío Complementario Nro 01</h1>                      
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Este desafío muestra, a través de un loop "for", todas las frecuencias correspondientes (expresadas en hercios) a la octava de una nota musical declarada por un usuario.</p>
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Para esto, primero, el navegador nos pedira que ingresemos una nota. Esta misma puede ser cualquiera de la escala musical occidental tradicional. Es decir:<b> Do, Re, Mi, Sol#, Mib, etc</b>; en el caso de no estar familiarizado con este sistema, se nos permitirá ingresar nuestra nota con cifrado américano. Por ejemplo:<b> Ab, C#, D, etc</b>. </p>
+                        <p class="col-12 col-lg-7 mb-0 pb-2">En caso de ingresar un dato, y que este no correspondiese a una nota musical, seremos alertados y podremos volver a intentarlo.</p>
+                        <img src="../../assets/dc_ingrese-nota.svg" alt="Imágen del código de ingrese Nota" class="col-12 col-lg-7 pt-3 pb-3 rounded">
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Una vez ingresada la nota, el programa le asignará a esta misma un valor inicial llamado Fundamental. Este mismo representa el mínimo valor posible, expresado en hercios (Hz), capaz de ser percibido por el oído humano para esa nota en particular.</p>
+                        <img src="../../assets/dc_fundamental.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
+                        <p class="col-12 col-lg-7 mb-0 pb-2">Con este dato ingresado y la fundamental asignada, el programa procederá a calcular las frecuencias correspondientes a las próximas octavas. Esto lo hará a través de un ciclo "for", el cual multiplicará nuestra fundamental por el número 2, luego su resultado por el número 2 y así sucesivamente.</p>
+                        <img src="../../assets/dc_ciclo.svg" alt="Imágen del código de asignación a Fundamental" class="col-12 col-lg-7 pt-3 pb-3">
+                        <p class="col-12 col-lg-7 mb-0 pb-4">Una vez finalizado, recibiremos una alerta con todos nuestros resultados, siempre y cuando los mismos sean menores a 20,000hz, lo cual corresponde a la frecuencia más aguda percibida por el oído humano.</p>
+                        <p class="col-12 col-lg-7 mb-0 pb-2">A continuación, para comenzar, se deberá presionar el botón "Iniciar".<span class="cursor_txt">█</span></p>
+                        <div class="m-0 d-flex d-flex justify-content-center flex-column flex-sm-row align-items-center pb-3">
+                            <button onclick="botonA()" class="btn btn-dark col-6 m-4 p-4">Iniciar</button>
+                            <a href="https://github.com/LucasGarzon/js_30315/blob/master/javascript/complementarios/desafiocomp01.js" target="blank" class="btn btn-dark col-6 m-4 p-4">Ir al Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="overflow-hidden">
+        <div class="line"></div>
+        <div class="container-fluid bg-primary d-flex flex-column flex-sm-row align-items-center m-0">
+            <div class="row text-center text-sm-start col-12 col-sm-6 pt-3">
+                <h2 class="pb-1 pb-md-3">lg</h2>
+                <h3 class="fs-6 pb-3">Lucas Garzón | JavaScript - Comisión 30315 | 2022</h3>
+            </div>
+            <div class="row text-center text-sm-end col-12 col-sm-6 pt-3 ms-sm-auto">
+                <h2 class="pb-1 pb-md-3">Navegación</h3>
+                <ul class="fs-6 pb-3">
+                    <li><a href="../../index.html">Index</a></li>
+                    <li><a href="../desafios.html">Desafíos</a></li>
+                    <li><a href="#">Desafíos Complementarios</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../../javascript/complementarios/desafiocomp01.js"></script>
+    <script src="../../javascript/botonesIndex.js"></script>
+    <!-- BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP BOOSTRAP  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>
