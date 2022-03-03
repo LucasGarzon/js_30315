@@ -21,11 +21,13 @@ function DesafioComplementario02() {
     // Con un loop for se obtienen las subdivisiones de Redonda
     for (i = 0; i < figuras.length; i++) {
       redonda = (redonda / subdivision).toFixed(1);
-      resultadoConversor.push(figuras[i] + ": " + redonda + "ms " + "\n");
+      resultadoConversor.push("-->" + "<b>" + figuras[i] + "</b>" + ": " + redonda + "ms " + "<br>");
     }
-    alert(resultadoConversor.join(""))
+    let container = document.getElementById("resultados")
+    container.innerHTML = "<p>" + resultadoConversor.join("") + "</p>"
   } else {
-    alert("Los BPM deben ser mayores a 0 y menores de 3000");
+    let container = document.getElementById("resultados")
+    container.innerHTML = "<p class=\"text-center\">ERROR - POR FAVOR VUELVA A INTENTAR<br><br><br>///Los BPM deben ser mayores a 0 y menores de 3000///</p>"
   }
 }
 
