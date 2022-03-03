@@ -24,7 +24,9 @@ function DesafioComplementario02() {
       resultadoConversor.push("-->" + "<b>" + figuras[i] + "</b>" + ": " + redonda + "ms " + "<br>");
     }
     let container = document.getElementById("resultados")
-    container.innerHTML = "<p>" + resultadoConversor.join("") + "</p>"
+    container.innerHTML = "<p class=\"escritura\">" + resultadoConversor.join("") + "</p>"   
+    let paraRemover = document.getElementById("posResultado")
+    paraRemover.remove();
   } else {
     let container = document.getElementById("resultados")
     container.innerHTML = "<p class=\"text-center\">ERROR - POR FAVOR VUELVA A INTENTAR<br><br><br>///Los BPM deben ser mayores a 0 y menores de 3000///</p>"

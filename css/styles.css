@@ -90,5 +90,20 @@ input[type=number], .form-input {
     75% {
       opacity: 0;
     }
+}
+
+.escritura {
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0;
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
 
