@@ -95,7 +95,6 @@ input[type=number], .form-input {
 .escritura {
   overflow: hidden; 
   white-space: nowrap; 
-  margin: 0;
   letter-spacing: .15em; 
   animation: 
     typing 2.5s steps(40, end),

@@ -26,10 +26,12 @@ function DesafioComplementario02() {
     let container = document.getElementById("resultados")
     container.innerHTML = "<p class=\"escritura\">" + resultadoConversor.join("") + "</p>"   
     let audios = document.getElementById("playAudio")
-    audios.innerHTML = "<audio controls autoplay class=\"d-none\"><source src=\"../../assets/print.mp3\" type=\"audio/mpeg\"></audio>"
+    audios.innerHTML = "<audio controls autoplay class=\"d-none\"><source src=\"../../assets/print03.mp3\" type=\"audio/mpeg\"></audio>"
   } else {
     let container = document.getElementById("resultados")
     container.innerHTML = "<p class=\"text-center\">ERROR - POR FAVOR VUELVA A INTENTAR<br><br><br>///Los BPM deben ser mayores a 0 y menores de 3000///</p>"
+    let audios = document.getElementById("playAudio")
+    audios.innerHTML = "<audio controls autoplay class=\"d-none\"><source src=\"../../assets/error.mp3\" type=\"audio/mpeg\"></audio>"
   }
 }
 
