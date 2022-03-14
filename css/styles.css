@@ -57,6 +57,10 @@ footer a:hover {
     animation: myAnim 2s ease 0s infinite normal forwards;    
 }
 
+.texto_blanco {
+    color: white;
+}
+
 .container__textoDesafio {
     border: 2px dashed white;
     /* outline: ; */
@@ -69,6 +73,11 @@ footer a:hover {
     box-shadow:
       -2px 0px 5px rgba(20, 20, 20, 0.6) inset,
       2px 0px 3px #7fbce8 inset;
+}
+
+.btn__borrar {
+    background-color: red;
+    color: white;
 }
 
 input[type=number], .form-input {
