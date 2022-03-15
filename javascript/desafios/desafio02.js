@@ -5,6 +5,10 @@ let nombreCategoria = [];
 let sumaPrecios = [];
 let opt = "";
 let select = document.getElementById("sCat");
+
+if (nombreCategoria) {
+  cargarInfo()
+}
 //Sumar categorias --> onclick
 function cargarInfo() {
   let ingresoCategoria = document.getElementById("nuevaCategoria").value.trim();
